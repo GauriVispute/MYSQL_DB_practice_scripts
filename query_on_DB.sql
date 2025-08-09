@@ -4,3 +4,5 @@ SELECT * FROM users;
 SELECT * FROM users WHERE gender ='FEMALE';
 
 select * from users where gender = 'Male';
+
+-- ssdkjsd
