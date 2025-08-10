@@ -1,5 +1,7 @@
 SELECT * FROM users;
 
+SELECT gender, name from users;
+
 -- get all Females 
 SELECT * FROM users WHERE gender ='FEMALE';
 
@@ -17,3 +19,27 @@ select * from users where date_of_birth <'1995-09-09';
 select * from users where id>10;
 
 select * from users where id<=10;
+
+-- date_of_birth can be null
+SELECT * FROM users WHERE date_of_birth IS NULL;
+
+-- date_of_birth is not null
+SELECT * FROM users WHERE date_of_birth IS NOT NULL;
+
+-- date_of_birth between 2 DOB (range)
+SELECT * FROM users WHERE date_of_birth BETWEEN '1990-09-09' AND '1999-09-09';
+
+-- get gender only  Male , female
+SELECT * FROM users WHERE gender in ('Male','Female');
+
+SELECT * FROM users WHERE gender ='Female' AND salary >'70000';
+
+SELECT * FROM users WHERE gender ='Female' AND salary < 70000;
+
+SELECT * FROM users WHERE gender='Male' AND salary >70000;
+
+SELECT * FROM users WHERE gender='Male' AND salary < 70000;
+
+-- ORDER BY  CLAUSE
+SELECT * FROM users WHERE gender='Male' OR salary >65000;
+
