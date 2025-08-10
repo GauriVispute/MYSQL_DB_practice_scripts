@@ -49,4 +49,8 @@ SELECT * FROM users WHERE gender='Male' OR salary >65000 ORDER BY date_of_birth 
 -- need top 5 row USE limit clause
 SELECT * FROM users WHERE gender = 'Male' OR salary = 65000 ORDER BY date_of_birth DESC LIMIT 5;
 
- 
+SELECT * FROM users WHERE salary > 60000 ORDER BY  created_atDESC LIMIT 5;
+
+SELECT * FROM users ORDER BY salary DESC; 
+
+SELECT * FROM users WHERE salary BETWEEN 50000 AND 70000;
