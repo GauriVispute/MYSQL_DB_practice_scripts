@@ -40,6 +40,13 @@ SELECT * FROM users WHERE gender='Male' AND salary >70000;
 
 SELECT * FROM users WHERE gender='Male' AND salary < 70000;
 
--- ORDER BY  CLAUSE
-SELECT * FROM users WHERE gender='Male' OR salary >65000;
+-- ORDER BY  CLAUSE Acending
+SELECT * FROM users WHERE gender='Male' OR salary >65000 ORDER BY date_of_birth ASC;
+
+-- Decending
+SELECT * FROM users WHERE gender='Male' OR salary >65000 ORDER BY date_of_birth DESC;
+
+
+
+
 
