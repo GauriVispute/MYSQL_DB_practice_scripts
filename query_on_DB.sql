@@ -40,7 +40,7 @@ SELECT * FROM users WHERE gender='Male' AND salary >70000;
 
 SELECT * FROM users WHERE gender='Male' AND salary < 70000;
 
--- ORDER BY  CLAUSE Acending
+-- ORDER BY  CLAUSE Acending(default)
 SELECT * FROM users WHERE gender='Male' OR salary >65000 ORDER BY date_of_birth ASC;
 
 -- Decending
@@ -49,6 +49,4 @@ SELECT * FROM users WHERE gender='Male' OR salary >65000 ORDER BY date_of_birth 
 -- need top 5 row USE limit clause
 SELECT * FROM users WHERE gender = 'Male' OR salary = 65000 ORDER BY date_of_birth DESC LIMIT 5;
 
-
-
-
+ 
