@@ -54,3 +54,4 @@ SELECT * FROM users WHERE salary > 60000 ORDER BY  created_atDESC LIMIT 5;
 SELECT * FROM users ORDER BY salary DESC; 
 
 SELECT * FROM users WHERE salary BETWEEN 50000 AND 70000;
+
