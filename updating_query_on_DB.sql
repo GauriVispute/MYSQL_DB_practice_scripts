@@ -18,5 +18,4 @@ update users set salary = salary+10000 where salary<60000;
 
 update users set gender='Other' where name='Ishaan';
 
-
 select * from users;
