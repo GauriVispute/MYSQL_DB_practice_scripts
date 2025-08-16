@@ -77,3 +77,16 @@ from users;
 
 -- datedifference between from current date to your date of birth
 select name, datediff(curdate(),date_of_birth) as day  from users;
+
+-- using timestampdiff() calculates age in years
+select name , timestampdiff(year , date_of_birth , curdate()) as age from users;
+
+-- using floor , ceil , round function 
+select name,
+		round(salary) as round,
+        floor(salary) as floor,
+        ceil(salary)as ceil
+from users;
+
+-- using mod function
+select id , mod(id,2) as remainder  from users;
