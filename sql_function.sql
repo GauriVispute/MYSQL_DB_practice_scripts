@@ -27,10 +27,53 @@ SELECT gender ,MIN(salary) AS min_salary , MAX(salary) AS max_salary from users 
 -- String function 
 select name , length(name) as length_of_name from users;
 
-select id , gender ,lower(name) as lower, concat(lower(name),'4567') as username, length(name) as length_of_name from users; 
+-- lower() function
+select name , lower(name) as lower_name from users;
 
+-- upper() function
+select name , upper(name) as upper_name from users;
 
+-- now() function for current time 
+select 
+	id , 
+    gender ,
+    lower(name) as lower_name, 
+    length(name) as length_of_name,
+    concat(lower(name),'4567') as username,
+    now() as time
+from users; 
 
+-- year_of_birth
+select 
+	id , 
+    gender ,
+    lower(name) as lower_name, 
+    length(name) as length_of_name,
+    concat(lower(name),'4567') as username,
+    year(date_of_birth) as yob
+from users; 
 
+-- day() 
+select 
+	id , 
+    gender ,
+    lower(name) as lower_name, 
+    length(name) as length_of_name,
+    concat(lower(name),'4567') as username,
+    date_of_birth,
+    day(date_of_birth) as yob
+from users; 
 
+-- month() 
+select 
+	id , 
+    gender ,
+    lower(name) as lower_name, 
+    length(name) as length_of_name,
+    concat(lower(name),'4567') as username,
+    date_of_birth,
+    month(date_of_birth) as mob
+from users; 
 
+-- datedifference between from current date to your date of birth
+select name, datediff(curdate(),date_of_birth) as day  from users;
