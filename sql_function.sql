@@ -90,3 +90,8 @@ from users;
 
 -- using mod function
 select id , mod(id,2) as remainder  from users;
+
+-- if condition 
+select name, gender ,
+if(gender = 'Female','Yes','No') as is_female
+from users; 
