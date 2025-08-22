@@ -1,6 +1,6 @@
 CREATE DATABASE IF NOT EXISTS practiceSQL;
 
---  DROP DATABASE practicesql;
+-- DROP DATABASE practicesql;
 
 USE practiceSQL;
 
@@ -13,5 +13,6 @@ CREATE TABLE users(
     salary DECIMAL(10,2),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
 
 select * from  users;
